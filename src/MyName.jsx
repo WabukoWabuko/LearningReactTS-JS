@@ -1,6 +1,6 @@
 function MyName() {
     return (
-        <h1>My Name is Wabuko</h1>
+        <h1>My Name is Basil</h1>
     )
 }
 
