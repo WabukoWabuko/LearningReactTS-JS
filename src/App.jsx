@@ -6,7 +6,7 @@ function App() {
     <>
       <h1>React and Vite kickstart</h1>
       <h1>Officially Starting on a serious note.</h1>
-      <MyName/>
+      <MyName name="Trendafilova"/>
     </>
   )
 }

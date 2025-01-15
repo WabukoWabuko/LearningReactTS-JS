@@ -1,6 +1,6 @@
-function MyName() {
+function MyName({name}) {
     return (
-        <h1>My Name is Basil</h1>
+        <h1>My Name is {name}</h1>
     )
 }
 
