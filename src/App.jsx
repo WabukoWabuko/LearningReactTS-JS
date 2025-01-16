@@ -19,8 +19,13 @@
 
 
 function Item({ name, isPacked }) {
-  if (isPacked){return <li className="items">{name} ✅</li>;}
-  return <li className="items">{name}</li>;
+  return (
+    <li className="item">
+      {isPacked ? name + "✅" : name}
+    </li>
+  )
+  // if (isPacked){return <li className="items">{name} ✅</li>;}
+  // return <li className="items">{name}</li>;
 }
 
 export default function PackingList() {
@@ -29,7 +34,7 @@ export default function PackingList() {
       <h1>Sally Ride's Packing List</h1>
       <ul>
         <Item 
-          isPacked={true} 
+          isPacked={false} 
           name="Space suit" 
         />
         <Item 
