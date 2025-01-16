@@ -18,34 +18,53 @@
 // // export default App
 
 
-function Item({ name, isPacked }) {
-  return (
-    <li className="item">
-      {isPacked ? name + "✅" : name}
-    </li>
-  )
-  // if (isPacked){return <li className="items">{name} ✅</li>;}
-  // return <li className="items">{name}</li>;
-}
+// function Item({ name, isPacked }) {
+//   return (
+//     <li className="item">
+//       {isPacked ? name + "✅" : name}
+//     </li>
+//   )
+//   // if (isPacked){return <li className="items">{name} ✅</li>;}
+//   // return <li className="items">{name}</li>;
+// }
 
-export default function PackingList() {
-  return (
-    <section>
-      <h1>Sally Ride's Packing List</h1>
-      <ul>
-        <Item 
-          isPacked={false} 
-          name="Space suit" 
-        />
-        <Item 
-          isPacked={true} 
-          name="Helmet with a golden leaf" 
-        />
-        <Item 
-          isPacked={false} 
-          name="Photo of Tam" 
-        />
-      </ul>
-    </section>
+// export default function PackingList() {
+//   return (
+//     <section>
+//       <h1>Sally Ride's Packing List</h1>
+//       <ul>
+//         <Item 
+//           isPacked={false} 
+//           name="Space suit" 
+//         />
+//         <Item 
+//           isPacked={true} 
+//           name="Helmet with a golden leaf" 
+//         />
+//         <Item 
+//           isPacked={false} 
+//           name="Photo of Tam" 
+//         />
+//       </ul>
+//     </section>
+//   );
+// }
+
+// Rendering data from Arrays
+
+const people = [
+  'Creola Katherine Johnson: mathematician',
+  'Mario José Molina-Pasquel Henríquez: chemist',
+  'Mohammad Abdus Salam: physicist',
+  'Percy Lavon Julian: chemist',
+  'Subrahmanyan Chandrasekhar: astrophysicist'
+];
+
+
+export default function List() {
+  // Assigning a variable to mapped data
+  const listItems = people.map(person =>
+    <li>{person}</li>
   );
+  return <ul>{listItems}</ul>;
 }
