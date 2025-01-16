@@ -68,3 +68,8 @@ export default function List() {
   );
   return <ul>{listItems}</ul>;
 }
+
+// for array lists with mapping the command is below:
+// const variableNameOfList = variableName.map(variableName => variableName.keyOfItems)
+// and when filtering we use === sign
+// const variableNameOfList = variableName.map(variableName => variableName.keyOfItems === "whateverIsBeingFiltered")
