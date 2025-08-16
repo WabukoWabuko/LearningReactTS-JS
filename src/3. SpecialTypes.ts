@@ -14,16 +14,19 @@
 
 // Math.round(t); // No error is shown/thrown
 
-// Type: unknown 
-let w: unknown = 1;
-w = "string";
+// // Type: unknown 
+// let w: unknown = 1;
+// w = "string";
 
-w = {
-    runANonExistentMethod: () => {
-        console.log("I think therefore I am.");
-    }
-} as { runANonExistentMethod: () => void }
+// w = {
+//     runANonExistentMethod: () => {
+//         console.log("I think therefore I am.");
+//     }
+// } as { runANonExistentMethod: () => void }
 
-if(typeof w === 'object' && w !== null){
-    (w as { runANonExistentMethod: Function }).runANonExistentMethod();
-}
+// if(typeof w === 'object' && w !== null){
+//     (w as { runANonExistentMethod: Function }).runANonExistentMethod();
+// }
+
+// Type: never
+let x: never = true; // Boolean is not assignaable to type never 
