@@ -29,4 +29,8 @@
 // }
 
 // Type: never
-let x: never = true; // Boolean is not assignaable to type never 
+// let x: never = true; // Boolean is not assignaable to type never 
+
+// Type: undefined & null
+let q: undefined = undefined;
+let x: null = null;
