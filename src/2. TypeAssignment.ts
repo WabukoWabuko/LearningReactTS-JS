@@ -1,5 +1,5 @@
 // Explicit Type
 
-let firstName: string = "WabukoWabuko";
+let firstName: string = "WabukoAdams";
 
 console.log(firstName)
